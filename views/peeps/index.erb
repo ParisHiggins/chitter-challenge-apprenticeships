@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  .center {
+    text-align: center;
+    border: 3px solid pink;
+  }
+
+  h2 { font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+
+  p {
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+</style>
+
+<h2 class="center">Welcome to Chitter</h2>
+
+
+
+<h2 class="center-peeps">
+  <% @peeps.each do |peep| %>
+    <li><%= peep %></li>
+  <% end %>
+</h2>
+<style>
+.center-peeps {
+  text-align: center;
+
+}
+</style>
